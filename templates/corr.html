@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <ul style="color: whitesmoke"><li>
+        Prezentacja drużyn gospodarz / gość: [Ilość spotkań, bramki strzelone, bramki stracone, średnia strzelonych bramek, średnia straconych bramek]
+        <br/> <br/>{{ corr.info1 }}</li><br/>
+        <li>Średnia goli na mecz: {{ corr.info2 }}</li><br/>
+        <li>Strzelone: {{ corr.info3 }} | Stracone: {{ corr.info4 }} | Odchylenie: {{ corr.info5 }}</li><br/>
+        <li>Korelacja dla tabel home i away: <br/> {{ corr.info11|safe }}</li><br/>
+            <li>Prezentacja drużyn tabela główna: [Ilość spotkań, bramki strzelone, bramki stracone, średnia strzelonych bramek, średnia straconych bramek]
+         <br/>{{ corr.info6 }}</li><br/>
+        <li>Średnia goli na mecz: {{ corr.info7 }}</li><br/>
+        <li>Strzelone: {{ corr.info8 }} | Stracone: {{ corr.info9 }} | Odchylenie: {{ corr.info10 }}</li><br/>
+        <li>Korelacja dla tabeli głównej: <br/> {{ corr.info12|safe }}</li><br/>
+    </ul>
+{% endblock %}

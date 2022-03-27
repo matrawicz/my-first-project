@@ -1,0 +1,157 @@
+a { color:whitesmoke; }
+a:visited { color:greenyellow; }
+a:active { color:#5C615E; } 
+a:hover { color:#B2B3B4; } 
+#menu_450824da a { text-decoration: none; }
+#menu_450824da_pane { background-color: #E6E6E6; border: 1px solid #E6E6E6; padding-top: 10px; padding-bottom: 10px; box-shadow: 2px 2px 6px 0px rgba(8, 8, 8, 0.784314); }
+#menu_450824da_hr { background-color: #E6E6E6; height: 1px; border: none; }
+#menu_450824da_entry { padding-left: 10px; padding-right: 10px; padding-top: 3px; padding-bottom: 3px; }
+#menu_450824da_entry:hover { background-color: #323232; color: #FFFFFF !important; }
+#menu_450824da_entry:hover span { color:#FFFFFF !important; }
+		.menu_450824da_mainMenuEntry { text-align: center; }
+		.menu_450824da_mainMenuEntry:hover {	background-color:#282828; }
+		.menu_450824da_mainMenuEntry:hover span {	color:#FFFFFF !important; }
+		#menu_450824da .mobileEntry { display: none; } 
+		#menu_450824da .normalEntry { display: block; } 
+		@media only screen and (max-width:550px) { 
+			#menu_450824da .mobileEntry { display: block; } 
+			#menu_450824da .normalEntry { display: none; } 
+		}
+body { background-color:#BDBCD3; padding:0;  margin: 0; }
+.textstyle1 { text-align:center; }
+#container_73cb5bf { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; max-width:1200px; background:none;  }
+.textstyle2 { text-align:left; }
+#header { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:132px; background-color:#807AF9;  }
+#header_padding { margin: 20px 10px 20px 10px;display: block;  }
+.textstyle3 { font-size:40pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  }
+.textstyle4 { font-size:20pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold;  }
+.textstyle5 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+.textstyle5_index { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
+#navigation { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:30px; max-width:1200px; background-color:#FFFFFF;  }
+#menu_450824da { vertical-align: bottom; position:relative; display: inline-block; width:380px; height:38px; max-width:1200px; text-align:left; background-color:#FFFFFF;  }
+.menuholder1 { position: relative; overflow: hidden; width: 100%; height: 100%; }
+.style1 { position:absolute; width:37px; height:38px; left:10px;  }
+.style2 { position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin-top:auto; margin-bottom:auto; margin-left:auto; margin-right:auto; height:33px;  }
+.textstyle6 { font-size:22pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  white-space: nowrap; }
+.style3 { position:absolute; width:96px; height:38px; left:10px;  }
+.style4 { position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin-top:auto; margin-bottom:auto; margin-left:auto; margin-right:auto; height:19px;  }
+.textstyle7 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000; font-weight:bold;  white-space: nowrap; }
+.style5 { position:absolute; width:46px; height:38px; left:106px;  }
+.style6 { position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin-top:auto; margin-bottom:auto; margin-left:auto; margin-right:auto; height:18px;  }
+.textstyle8 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  white-space: nowrap; }
+#container_3205b59a { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:424px; max-width:1200px; background-color:#242342;  }
+#container_3205b59a_padding { margin: 20px; display: block;  }
+#content { vertical-align: top; position:relative; display: inline-block; width:99%; min-height:364px; background:none;  }
+#content_padding { margin: 10px; display: block;  }
+#footer { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:134px; max-width:1200px; background-color:#6764B9;  }
+#footer_padding { margin: 20px; display: block;  }
+.textstyle9 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:whitesmoke;  }
+#container_31d6b3e8 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:110px; background:none;  }
+#container_31d6b3e8_padding { margin: 10px; display: block;  }
+#container_5355ec6 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:108px; background:none;  }
+#container_5355ec6_padding { margin: 10px; display: block;  }
+#container_38f1d0e3 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:110px; background:none;  }
+#container_38f1d0e3_padding { margin: 10px; display: block;  }
+@media only screen and (max-width: 600px)
+{
+		#content { width:100%;  }
+}
+@media only screen and (max-width: 450px)
+{
+		#container_31d6b3e8 { width:100%;  }
+		#container_5355ec6 { width:100%;  }
+		#container_38f1d0e3 { width:100%;  }
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dataframe {
+    color: white;
+}
+
+
+#container_currlea { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
+#container_currlea_padding { margin: 10px; display: block;  }
+#container_left { vertical-align: top; position:relative; display: inline-block; width:50%; min-height:150px; background:none;  }
+#container_left_padding { margin: 10px; display: block;  }
+#container_right { vertical-align: top; position:relative; display: inline-block; width:50%; min-height:150px; background:none;  }
+#container_right_padding { margin: 10px; display: block;  }
+@media only screen and (max-width: 400px)
+{
+		#container_left { width:100%;  }
+		#container_right { width:100%;  }
+}
+
+.vertical-text span {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 13px;
+    text-align: center;
+    padding: 21px;
+    border: 1px solid #AAA;
+    line-height: 1.5em;
+    border-radius: 6px 0 6px 0;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="textstyle1">
+<div id="container_currlea"><div id="container_currlea_padding" ><div class="textstyle1"><div id="container_left"><div id="container_left_padding" ><div class="textstyle1">
+        <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Main')">Tabela główna</button>
+  <button class="tablinks" onclick="openCity(event, 'Home')">Tabela u siebie</button>
+  <button class="tablinks" onclick="openCity(event, 'Away')">Tabela na wyjeździe</button>
+</div>
+
+<div id="Main" class="tabcontent">
+  <h3 class="textstyle4">Główna</h3>
+  {{ table_html_main|safe }}
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3 class="textstyle4">U siebie</h3>
+  {{ table_html_home|safe }}
+</div>
+
+<div id="Away" class="tabcontent">
+  <h3 class="textstyle4">Na wyjeździe</h3>
+  {{ table_html_away|safe }}
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</div>
+</div></div><div id="container_right"><div id="container_right_padding" ><div class="textstyle1"> <form method="POST">
+    {% csrf_token %}
+    <span class="textstyle5_index">Gospodarz</span>
+    <select name="Home">
+        {% for team in teams %}
+    <option value="{{ forloop.counter }}">{{ team }}</option>
+        {% endfor %}
+    </select>
+
+    -
+    <span class="textstyle5_index">Gość</span>
+    <select name="Away">
+        {% for team in teams %}
+    <option value="{{ forloop.counter }}">{{ team }}</option>
+        {% endfor %}
+    </select>
+
+        <select name="Method">
+    <option value="corr">Analiza korelacji</option>
+            <option value="poisson">Analiza Poissona</option>
+
+    </select>
+
+    <button type="submit">Przechodzę do analizy</button>
+</form> </div>
+</div></div></div>
+<div style="clear:both"></div></div></div>  </div>
+
+{% endblock %}
+

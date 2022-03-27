@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<button class="accordion">Co to jest korelacja</button>
+<div class="panel">
+    <p>Korelacja jako termin statystyczny jest to poziom relacji liniowej pomiędzy zmiennymi liczbowymi.</p><br/>
+    <p>Korelacja jako statystyka stwierdza istnienie zależności między dwiema zmiennymi X i Y jednak nie jest w stanie
+        wyjaśnić dlaczego występują i w jaki sposób powstały.</p><br/>
+    <p><a href="https://mfiles.pl/pl/index.php/Korelacja">Źródło</a></p>
+</div>
+
+<button class="accordion">Właściwości</button>
+<div class="panel">
+  <p>Do istotnych właściwości współczynnika korelacji należą:
+    <ol>
+    <li>Korelacja zawsze mieści się w przedziale od -1 do +1</li>
+    <li>Korelacja to miara niemianowana. Jeśli zmienimy jednostki dla X lub Y, wartość korelacji nie ulegnie zmianie.
+        Przykładowo zmiana jednostek temperatury ze stopni Fahrenheita na stopnie Celsjusza nie wpłynie na korelację z daną zmienną.</li>
+    <li>W danym zbiorze można zamieniać zmienne X i Y bez zmiany korelacji</li></ol></p>
+</div>
+
+<button class="accordion">Jak czytać wynik analizy na stronie:</button>
+<div class="panel">
+  <p>Analiza korelacji przedstawia podobieństwo gry danych zespołów:</p><br/>
+    <p>1) Porównanie gry gospodarza u siebie i gościa w meczach wyjazdowych</p><br/>
+    <p>2) Porównanie gier w całym sezonie</p><br/>
+    <p>Im wyższy stosunek korelacji, tym bardziej zbliżona gra danych zespółów.<br/>
+    <br/>Analiza może pomóc w wytypowaniu ilości bramek w meczu - odczyt bramek strzelonych, straconych i odchylenia.</p>
+
+</div>
+
+{% endblock %}

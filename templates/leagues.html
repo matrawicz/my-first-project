@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <input id="myInput" type="text" placeholder="Filtruj"><br/>
+
+        <table id="table_3a41f573" cellpadding="3" cellspacing="1" >
+	<thead>
+		<td width="5%" height="20px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_3ca14934">
+                <div class="textstyle1">
+                  <span class="textstyle9">Lp.</span>
+                  </div>
+                </div>
+		</td>
+		<td width="39%" height="20px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_5531188a">
+                <div class="textstyle1">
+                  <span class="textstyle9">Nazwa</span>
+                  </div>
+                </div>
+		</td>
+		<td width="45%" height="20px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_5775fb">
+                <div class="textstyle1">
+                  <span class="textstyle9">Kraj</span>
+                  </div>
+                </div>
+		</td>
+		<td width="9%" height="20px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_4e2dc648">
+                <div class="textstyle1">
+                  <span class="textstyle9">Poziom</span>
+                  </div>
+                </div>
+		</td>
+    </thead>
+
+	</tr>
+         <tbody id="myTable">
+        {% for element in leagues %}
+	<tr>
+		<td width="5%" height="19px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_445fda0d">
+                <div class="textstyle1">
+                  <span class="textstyle5_index">{{ forloop.counter }}</span>
+                  </div>
+                </div>
+		</td>
+		<td width="39%" height="19px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_5442700c">
+                <div class="textstyle1"><a href="{{ element.get_absolute_url }}">
+                  <span class="textstyle10">{{ element.name }}</span></a>
+                  </div>
+                </div>
+		</td>
+		<td width="45%" height="19px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_50dff902">
+                <div class="textstyle1">
+                  <span class="textstyle5_index">{{ element.country }}</span>
+                  </div>
+                </div>
+		</td>
+		<td width="9%" height="19px" style="vertical-align: top; overflow:hidden; ">              <div id="cell_518a40e6">
+                <div class="textstyle1">
+                  <span class="textstyle5_index">{{ element.level }}</span>
+                  </div>
+                </div>
+		</td>
+	</tr>
+        {% endfor %}
+        </tbody>
+              </table>
+
+{% endblock %}

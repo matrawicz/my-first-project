@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<button class="accordion">Co to jest rozkład Poissona</button>
+<div class="panel">
+  <p>Rozkład Poissona jest jednym z rozkładów zmiennych losowych skokowych.</p><br/>
+<p>Rozkład Poissona jest przybliżeniem rozkładu dwumianowego dla dużej próby oraz małego prawdopodobieństwa sukcesu. </p><br/>
+<p><a href="https://mfiles.pl/pl/index.php/Rozk%C5%82ad_Poissona">Źródło</a></p>
+</div>
+
+<button class="accordion">Do czego służy</button>
+<div class="panel">
+  <p>Według K. Zająca rozkład Poissona ma zastosowanie w:
+    <ul>
+    <li>statystycznym odbiorze towarów,</li>
+    <li>statystycznej kontroli jakości produkcji,</li>
+    <li>fizyce eksperymentalnej,</li>
+    <li>opisywaniu uszkodzeń różnego rodzaju urządzeń,</li>
+    <li>demografii,</li>
+    <li>opisaniu procesów transportowych.</li></ul></p>
+</div>
+
+<button class="accordion">Jak czytać wynik analizy na stronie:</button>
+<div class="panel">
+  <p>Wynikiem analizy poissona jest macierz z przewidywalnymi wynikami danego spotkania. Na osi X widnieje przypuszczalna
+  ilość goli gospodarzy, na osi Y bramki gości. Miejsce przecięcia oznacza prawdopodobny wynik w %.</p><br/>
+    <p>W macierzu zostały wyróżnione 4 wyniki z najwyższym prawdopodobieństwem.</p><br/>
+    <p>Symulacja może ułatwić obstawianie wyników meczy, bądź ilości goli w danym spotkaniu.</p>
+</div>
+
+{% endblock %}
